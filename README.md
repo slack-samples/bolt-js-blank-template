@@ -1,6 +1,6 @@
 # Bolt for JavaScript Blank Template
 
-This is a blank [Bolt for JavaScript](https://tools.slack.dev/bolt-js/) template app used to start buildng new Slack apps.
+This is a blank [Bolt for JavaScript](https://tools.slack.dev/bolt-js/) template app used to start building new Slack apps.
 
 ## Setup
 
