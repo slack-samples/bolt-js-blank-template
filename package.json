@@ -1,0 +1,27 @@
+{
+  "name": "bolt-js-blank-template",
+  "version": "1.0.0",
+  "description": "A blank template for Slack apps",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slack-samples/bolt-js-blank-template.git"
+  },
+  "keywords": [
+    "slack",
+    "bolt",
+    "slackapi"
+  ],
+  "author": "Slack Technologies, LLC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/slack-samples/bolt-js-blank-template/issues"
+  },
+  "homepage": "https://github.com/slack-samples/bolt-js-blank-template#readme",
+  "dependencies": {
+    "@slack/bolt": "^4.4.0"
+  }
+}
