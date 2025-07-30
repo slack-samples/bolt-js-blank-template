@@ -1,6 +1,6 @@
 const { App } = require('@slack/bolt');
 
-// Initializes your app with your app and bot token
+// Initializes your app with your Slack app and bot token
 const app = new App({
   token: process.env.SLACK_BOT_TOKEN,
   socketMode: true,
