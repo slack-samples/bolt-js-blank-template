@@ -1,6 +1,6 @@
 # Contributors Guide
 
-Interested in contributing? Awesome! Before you do though, please read our [Code of Conduct](./CODE_OF_CONDUCT.md). We take it very seriously, and expect that you will as well.
+Interested in contributing? Awesome! Before you do though, please read our [Code of Conduct](https://github.com/slack-samples/bolt-js-blank-template/blob/main/.github/CODE_OF_CONDUCT.md). We take it very seriously, and expect that you will as well.
 
 There are many ways you can contribute! :heart:
 
@@ -9,7 +9,7 @@ There are many ways you can contribute! :heart:
 - If you find a bug, please search for it in the [Issues](https://github.com/slack-samples/bolt-js-blank-template/issues), and if it isn't already tracked, [create a new issue](https://github.com/slack-samples/bolt-js-blank-template/issues/new). Fill out the "Bug Report" section of the issue template. Even if an Issue is closed, feel free to comment and add details, it will still be reviewed.
 - Issues that have already been identified as a bug (note: able to reproduce) will be labelled `bug`.
 - Issues that are related to the examples apps will be labelled `area:examples`.
-- If you'd like to submit a fix for a bug, [send a Pull Request](#creating_a_pull_request) and mention the Issue number.
+- If you'd like to submit a fix for a bug, [send a Pull Request](#creating-a-pull-request) and mention the Issue number.
 - Include tests that isolate the bug and verifies that it was fixed.
 
 ### New Features :bulb:
@@ -22,8 +22,8 @@ There are many ways you can contribute! :heart:
 ### Tests :mag:, Documentation :books:, Miscellaneous :sparkles:
 
 - If you'd like to improve the tests, you want to make the documentation clearer, you have an alternative implementation of something that may have advantages over the way its currently done, or you have any other change, we would be happy to hear about it!
-- If its a trivial change, go ahead and [send a Pull Request](#creating_a_pull_request) with the changes you have in mind.
-- If not, [open an Issue](https://github.com/slack-samples/bolt-js-getting-started-app/issues/new) to discuss the idea first.
+- If its a trivial change, go ahead and [send a Pull Request](#creating-a-pull-request) with the changes you have in mind.
+- If not, [open an Issue](https://github.com/slack-samples/bolt-js-blank-template/issues/new) to discuss the idea first.
 
 If you're new to our project and looking for some way to make your first contribution, look for Issues labelled `good first contribution`.
 
