@@ -1,8 +1,10 @@
 {
+  "$schema": "https://www.schemastore.org/package.json",
   "name": "bolt-js-blank-template",
   "version": "1.0.0",
   "description": "A blank template for Slack apps",
   "main": "app.js",
+  "type": "module",
   "scripts": {
     "lint": "npx @biomejs/biome check",
     "lint:fix": "npx @biomejs/biome check --write",
