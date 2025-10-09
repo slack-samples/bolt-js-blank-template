@@ -1,4 +1,4 @@
-const { App } = require('@slack/bolt');
+import { App } from '@slack/bolt';
 
 // Initializes your app with your Slack app and bot token
 const app = new App({
