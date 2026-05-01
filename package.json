@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/slack-samples/bolt-js-blank-template#readme",
   "dependencies": {
-    "@slack/bolt": "^4.6.0"
+    "@slack/bolt": "^4.7.2"
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.13"
