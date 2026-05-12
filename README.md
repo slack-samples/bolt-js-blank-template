@@ -4,7 +4,7 @@ This is a blank [Bolt for JavaScript](https://docs.slack.dev/tools/bolt-js/) tem
 
 ## Setup
 
-Before getting started, make sure you have a development workspace where you have permissions to install apps. If you don’t have one setup, go ahead and [create one](https://slack.com/create).
+Before getting started, make sure you have a development workspace where you have permissions to install apps. If you don't have one setup, go ahead and [create one](https://slack.com/create).
 
 ### Developer Program
 
@@ -12,7 +12,41 @@ Join the [Slack Developer Program](https://api.slack.com/developer-program) for 
 
 ## Installation
 
-### Create a Slack App
+<details><summary><strong>Using Slack CLI</strong></summary>
+
+Install the latest version of the Slack CLI for your operating system:
+
+- [Slack CLI for macOS & Linux](https://docs.slack.dev/tools/slack-cli/guides/installing-the-slack-cli-for-mac-and-linux/)
+- [Slack CLI for Windows](https://docs.slack.dev/tools/slack-cli/guides/installing-the-slack-cli-for-windows/)
+
+You'll also need to log in if this is your first time using the Slack CLI.
+
+```sh
+slack login
+```
+
+#### Initializing the project
+
+```sh
+slack create my-bolt-js-app --template slack-samples/bolt-js-blank-template
+cd my-bolt-js-app
+```
+
+#### Creating the Slack app
+
+Use the following command to add your new Slack app to your development workspace. Choose a "local" app environment for upcoming development:
+
+```sh
+slack install
+```
+
+After the Slack app has been created you're all set to start developing!
+
+</details>
+
+<details><summary><strong>Using Terminal</strong></summary>
+
+#### Create Your Slack App
 
 1. Open [https://api.slack.com/apps/new](https://api.slack.com/apps/new) and choose "From an app manifest"
 2. Choose the workspace you want to install the application to
@@ -34,25 +68,40 @@ export SLACK_BOT_TOKEN=xoxb-example
 export SLACK_APP_TOKEN=xapp-1-example
 ```
 
-### Setup Your Local Project
+#### Initializing the project
 
 ```sh
-# Clone this project onto your machine
-git clone https://github.com/slack-samples/bolt-js-blank-template.git
+git clone https://github.com/slack-samples/bolt-js-blank-template.git my-bolt-js-app
+cd my-bolt-js-app
+```
 
-# Change into this project directory
-cd bolt-js-blank-template
+#### Install dependencies
 
-# Install dependencies
+```sh
 npm install
+```
 
-# Run Bolt server
+</details>
+
+## Development
+
+### Starting the app
+
+#### Slack CLI
+
+```sh
+slack run
+```
+
+#### Terminal
+
+```sh
 npm start
 ```
 
 At this point a message should appear in the terminal that notes the Bolt app is running! It doesn't do much else at the moment.
 
-#### Linting
+### Linting
 
 ```sh
 # Run lint for code formatting and linting
