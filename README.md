@@ -32,15 +32,7 @@ slack create my-bolt-js-app --template slack-samples/bolt-js-blank-template
 cd my-bolt-js-app
 ```
 
-#### Creating the Slack app
-
-Use the following command to add your new Slack app to your development workspace. Choose a "local" app environment for upcoming development:
-
-```sh
-slack install
-```
-
-After the Slack app has been created you're all set to start developing!
+After cloning, you're all set to start developing!
 
 </details>
 
@@ -52,21 +44,15 @@ After the Slack app has been created you're all set to start developing!
 2. Choose the workspace you want to install the application to
 3. Copy the contents of [manifest.json](./manifest.json) into the text box that says `*Paste your manifest code here*` (within the JSON tab) and click _Next_
 4. Review the configuration and click _Create_
-5. You'll be redirected to the app settings page for your app. Click _Install App_ in the left hand menu then _Install to Workspace_ and _Allow_ on the screen that follows.
+5. Click _Install to Workspace_ and _Allow_ on the screen that follows. You'll then be redirected to the App Configuration dashboard.
 
 #### Environment Variables
 
-Before you can run the app, you'll need to gather some environment variables.
+Before you can run the app, you'll need to store some environment variables.
 
-1. **Bot token**: Open your [app settings](https://api.slack.com/apps) page, click _OAuth & Permissions_ in the left hand menu, then copy the _Bot User OAuth Token_.
-2. **App token**: Click _Basic Information_ from the left hand menu and follow the steps in the _App-Level Tokens_ section to create an app-level token with the `connections:write` scope.
-
-Once you have these, export both in a shell for following processes:
-
-```sh
-export SLACK_BOT_TOKEN=xoxb-example
-export SLACK_APP_TOKEN=xapp-1-example
-```
+1. Rename `.env.sample` to `.env`
+2. Open your apps configuration page from [this list](https://api.slack.com/apps), click _OAuth & Permissions_ in the left hand menu, then copy the _Bot User OAuth Token_ into your `.env` file under `SLACK_BOT_TOKEN`
+3. Click _Basic Information_ from the left hand menu and follow the steps in the _App-Level Tokens_ section to create an app-level token with the `connections:write` scope. Copy that token into your `.env` as `SLACK_APP_TOKEN`.
 
 #### Initializing the project
 
@@ -99,13 +85,18 @@ slack run
 npm start
 ```
 
-At this point a message should appear in the terminal that notes the Bolt app is running! It doesn't do much else at the moment.
-
 ### Linting
 
-```sh
+```zsh
 # Run lint for code formatting and linting
 npm run lint
+```
+
+### Testing
+
+```zsh
+# Run test for unit tests
+npm test
 ```
 
 ## Resources
