@@ -12,7 +12,7 @@ Join the [Slack Developer Program](https://api.slack.com/developer-program) for 
 
 ## Installation
 
-<details><summary><strong>Using Slack CLI</strong></summary>
+### Using Slack CLI
 
 Install the latest version of the Slack CLI for your operating system:
 
@@ -28,15 +28,18 @@ slack login
 #### Initializing the project
 
 ```sh
-slack create my-bolt-js-app --template slack-samples/bolt-js-blank-template
-cd my-bolt-js-app
+slack create bolt-js-blank --template slack-samples/bolt-js-blank-template
+cd bolt-js-blank
 ```
 
-After cloning, you're all set to start developing!
+#### Running the app
 
-</details>
+```sh
+slack run
+```
 
-<details><summary><strong>Using Terminal</strong></summary>
+<details>
+<summary><h3>Using Terminal</h3></summary>
 
 #### Create Your Slack App
 
@@ -67,23 +70,15 @@ cd my-bolt-js-app
 npm install
 ```
 
-</details>
-
-## Development
-
-### Starting the app
-
-#### Slack CLI
-
-```sh
-slack run
-```
-
-#### Terminal
+#### Starting the app
 
 ```sh
 npm start
 ```
+
+</details>
+
+## Development
 
 ### Linting
 
